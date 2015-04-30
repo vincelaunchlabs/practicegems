@@ -13,4 +13,17 @@
       <%= link_to "| Edit",       'users/edit' %>
   <% end %>
 
+
+
+<p>
+  <ul class = "users">
+    <% @users.each do |user| %>
+    <li>
+      <%= user.email %>
+    </li>
+  <% end %>
+</ul>
+
+</p>
+
 </p>
