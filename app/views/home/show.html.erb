@@ -1,0 +1,16 @@
+<p>
+    Hello Vince
+</p>
+<p>
+  <% if !user_signed_in? %>
+    <%= link_to "Sign up", 'users/sign_up' %>
+    <%= link_to "| Sign in",   'users/sign_in' %>
+    <%= link_to "| Forgot password", 'users/password/new' %>
+  <% end %>
+  <% if user_signed_in? %>
+      <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link' %>
+      <%= link_to "| Sign out",  'users/sign_out', method: :delete %>
+      <%= link_to "| Edit",       'users/edit' %>
+  <% end %>
+
+</p>
