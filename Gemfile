@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 gem 'devise',		'3.4.1'
-gem 'faker',		'1.4.2'
+gem 'will_paginate','3.0.6'
+
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.1'
