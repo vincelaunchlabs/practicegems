@@ -4,7 +4,13 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-   root 'home#index'
+  # root 'pages/home' => 'high_voltage/pages#show', id: 'index'
+
+
+# config/initializers/high_voltage.rb
+HighVoltage.configure do |config|
+  config.home_page = 'index'
+end
 
 
   # Example of regular route:
