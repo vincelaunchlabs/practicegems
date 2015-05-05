@@ -5,7 +5,8 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # root 'pages/home' => 'high_voltage/pages#show', id: 'index'
-
+get 'blog' => 'high_voltage/pages#show', id: 'blog'
+get 'contact' => 'high_voltage/pages#show', id: 'contact'
 
 # config/initializers/high_voltage.rb
 HighVoltage.configure do |config|
