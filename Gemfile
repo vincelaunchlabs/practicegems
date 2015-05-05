@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 gem 'devise',		'3.4.1'
 gem 'will_paginate','3.0.6'
 gem 'haml-rails',	'0.9'
+gem 'high_voltage', '~> 2.3.0'
 
 group :development do
 	gem "hpricot"
