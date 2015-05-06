@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   # root 'pages/home' => 'high_voltage/pages#show', id: 'index'
 get 'blog' => 'high_voltage/pages#show', id: 'blog'
 get 'contact' => 'high_voltage/pages#show', id: 'contact'
+get 'project-example' => 'high_voltage/pages#show', id: 'project-example'
 
 # config/initializers/high_voltage.rb
 HighVoltage.configure do |config|
